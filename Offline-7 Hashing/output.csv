@@ -1,0 +1,82 @@
+                  Table:1  Separate Chaining    
+    ,Before Deletion,,     After Deletion
+           ,AVG_Search_Time,      AVG_search_Time,
+,48000,,30000
+,43000,,37000
+,55000,,45000
+,94000,,57000
+,75000,,65000
+,90000,,74000
+
+                  Table:2  Linear Probing    
+,    Before Deletion,,     After Deletion
+Load_Factor,AVG_Time,Num_OF_Probes,AVG_Time,Num_OF_Probes
+0.4,31000,0.3,33000,0.585
+0.5,36000,0.262,38000,0.5
+0.6,44000,0.258333,43000,0.48
+0.7,52000,0.281429,50000,0.511429
+0.8,58000,0.315,57000,0.5675
+0.9,64000,0.285556,65000,0.491111
+
+                  Table:3  Quadratic Probing    
+,    Before Deletion,,     After Deletion
+Load_Factor,AVG_Time,Num_OF_Probes,AVG_Time,Num_OF_Probes
+0.4,94000,0.3075,32000,0.605
+0.5,41000,0.29,48000,0.552
+0.6,44000,0.295,49000,0.55
+0.7,52000,0.347143,52000,0.614286
+0.8,60000,0.43125,60000,0.735
+0.9,67000,0.437778,71000,0.717778
+
+                  Table:4  Double hashing    
+,    Before Deletion,,     After Deletion
+Load_Factor,AVG_Time,Num_OF_Probes,AVG_Time,Num_OF_Probes
+0.4,37000,0.2625,31000,0.475
+0.5,42000,0.228,40000,0.408
+0.6,50000,0.226667,45000,0.403333
+0.7,67000,0.252857,62000,0.454286
+0.8,68000,0.2875,60000,0.52
+0.9,75000,0.26,67000,0.455556
+
+  Table:5 Performance of various collision resolution methods in load factor 0.4   
+,    Before Deletion,,    After Deletion
+Method,Avg Search Time, Avg no of probes,Avg Search Time, Avg no of probes
+Separate chaining,48000,N/A,30000,N/A
+Linear probing,31000,0.3,33000,0.2925
+Quadratic probing,94000,0.3075,32000,0.3025
+Double hashing,37000,0.2625,31000,0.2375
+  Table:6 Performance of various collision resolution methods in load factor 0.5   
+,    Before Deletion,,    After Deletion
+Method,Avg Search Time, Avg no of probes,Avg Search Time, Avg no of probes
+Separate chaining,43000,N/A,37000,N/A
+Linear probing,36000,0.262,38000,0.25
+Quadratic probing,41000,0.29,48000,0.276
+Double hashing,42000,0.228,40000,0.204
+  Table:5 Performance of various collision resolution methods in load factor 0.6   
+,    Before Deletion,,    After Deletion
+Method,Avg Search Time, Avg no of probes,Avg Search Time, Avg no of probes
+Separate chaining,55000,N/A,45000,N/A
+Linear probing,44000,0.258333,43000,0.24
+Quadratic probing,44000,0.295,49000,0.275
+Double hashing,50000,0.226667,45000,0.201667
+  Table:5 Performance of various collision resolution methods in load factor 0.7   
+,    Before Deletion,,    After Deletion
+Method,Avg Search Time, Avg no of probes,Avg Search Time, Avg no of probes
+Separate chaining,94000,N/A,57000,N/A
+Linear probing,52000,0.281429,50000,0.255714
+Quadratic probing,52000,0.347143,52000,0.307143
+Double hashing,67000,0.252857,62000,0.227143
+  Table:5 Performance of various collision resolution methods in load factor 0.8   
+,    Before Deletion,,    After Deletion
+Method,Avg Search Time, Avg no of probes,Avg Search Time, Avg no of probes
+Separate chaining,75000,N/A,65000,N/A
+Linear probing,58000,0.315,57000,0.28375
+Quadratic probing,60000,0.43125,60000,0.3675
+Double hashing,68000,0.2875,60000,0.26
+  Table:5 Performance of various collision resolution methods in load factor 0.9   
+,    Before Deletion,,    After Deletion
+Method,Avg Search Time, Avg no of probes,Avg Search Time, Avg no of probes
+Separate chaining,90000,N/A,74000,N/A
+Linear probing,64000,0.285556,65000,0.245556
+Quadratic probing,67000,0.437778,71000,0.358889
+Double hashing,75000,0.26,67000,0.227778
