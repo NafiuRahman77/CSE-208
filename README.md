@@ -27,13 +27,28 @@ This repository contains implementations of various advanced data structures and
 
 ### Offline-7: Hashing
 - **Description**: Implements the following hashing techniques:
-  1. **Separate Chaining**: Uses linked lists to resolve collisions in hash tables.
-  2. **Linear Probing**: Resolves collisions using a linear probing hash function:  
-     \( h(k, i) = (h_1(k) + i) \mod N \)
-  3. **Quadratic Probing**: Resolves collisions using a quadratic probing hash function:  
-     \( h(k, i) = (h_1(k) + c_1i + c_2i^2) \mod N \), where \( c_1 \) and \( c_2 \) are constants.
-  4. **Double Hashing**: Resolves collisions using a double hashing function:  
-     \( h(k, i) = (h_1(k) + i \cdot h_2(k)) \mod N \)
+  1. **Separate Chaining**:  
+   - Uses linked lists to resolve collisions in hash tables.
+
+2. **Linear Probing**:  
+   - Resolves collisions using a linear probing hash function:  
+     \[
+     h(k, i) = (h_1(k) + i) \mod N
+     \]
+
+3. **Quadratic Probing**:  
+   - Resolves collisions using a quadratic probing hash function:  
+     \[
+     h(k, i) = (h_1(k) + c_1 \cdot i + c_2 \cdot i^2) \mod N
+     \]  
+     - Where \( c_1 \) and \( c_2 \) are positive constants.
+
+4. **Double Hashing**:  
+   - Resolves collisions using a double hashing function:  
+     \[
+     h(k, i) = \big(h_1(k) + i \cdot h_2(k)\big) \mod N
+     \]
+
 
 ---
 
